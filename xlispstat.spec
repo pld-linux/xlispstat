@@ -54,7 +54,7 @@ hesaplama desteði bulunan bir gerçeklemesi.
 
 %build
 aclocal
-autoconf
+%{__autoconf}
 %configure
 %{__make} UCFLAGS="%{rpmcflags}"
 
