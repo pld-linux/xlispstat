@@ -6,7 +6,7 @@ Copyright:	Distributable
 Group:		Applications/Engineering
 Source:		ftp://umnstat.stat.umn.edu:/pub/xlispstat/3-52/%{name}-3-52-9.tar.gz
 URL:		http://lib.stat.cmu.edu/xlispstat
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The xlispstat package contains XLISP-PLUS, an implementation of the Lisp
