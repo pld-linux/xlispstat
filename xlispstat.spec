@@ -1,12 +1,13 @@
 Summary:	An implementation of the Lisp language with statistics extensions
 Name:		xlispstat
-Version:	3.52.9
-Release:	2
+Version:	3.52.18
+%define		tar_version	%(echo %{version} | sed 's,\\.,-,g')
+Release:	1
 License:	distributable
 Group:		Applications/Engineering
 Group(de):	Applikationen/Ingenieurwesen
 Group(pl):	Aplikacje/In¿ynierskie
-Source0:	ftp://umnstat.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{tar_version}.tar.gz
 URL:		http://lib.stat.cmu.edu/xlispstat
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
