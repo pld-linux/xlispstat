@@ -1,17 +1,18 @@
-Summary:	An implementation of the Lisp language with statistics extensions.
+Summary:	An implementation of the Lisp language with statistics extensions
 Name:		xlispstat
 Version:	3.52.9
 Release:	2
 Copyright:	Distributable
 Group:		Applications/Engineering
-Source:		ftp://umnstat.stat.umn.edu:/pub/xlispstat/3-52/%{name}-3-52-9.tar.gz
+Group(pl):	Aplikacje/In¿ynierskie
+Source0:	ftp://umnstat.stat.umn.edu:/pub/xlispstat/3-52/%{name}-%{version}.tar.gz
 URL:		http://lib.stat.cmu.edu/xlispstat
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The xlispstat package contains XLISP-PLUS, an implementation of the Lisp
-programming language for the X Window System.  XLISP-PLUS also includes
-extensions for performing advanced statistical computations.
+The xlispstat package contains XLISP-PLUS, an implementation of the
+Lisp programming language for the X Window System. XLISP-PLUS also
+includes extensions for performing advanced statistical computations.
 
 Install the xlispstat package if you need a version of the Lisp
 programming language for X with statistics extensions.
