@@ -7,7 +7,7 @@ Summary(pt_BR):	Xlisp de David Betz com extensões estatísticas
 Summary(tr):	David Betz'in istatistik yetenekleri olana xlisp yorumlayýcýsý
 Name:		xlispstat
 Version:	3.52.18
-%define		tar_version	%(echo %{version} | sed 's,\\.,-,g')
+%define		tar_version	%(echo %{version} | tr . -)
 Release:	6
 License:	distributable
 Group:		Applications/Engineering
