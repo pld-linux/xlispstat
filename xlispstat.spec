@@ -11,8 +11,6 @@ Version:	3.52.18
 Release:	6
 License:	distributable
 Group:		Applications/Engineering
-Group(de):	Applikationen/Ingenieurwesen
-Group(pl):	Aplikacje/In¿ynierskie
 Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{tar_version}.tar.gz
 URL:		http://lib.stat.cmu.edu/xlispstat
 BuildRequires:	XFree86-devel
