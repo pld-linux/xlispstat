@@ -1,4 +1,5 @@
 Summary:	An implementation of the Lisp language with statistics extensions
+Summary(pl):	Implementacja jêzyka Lisp z rozszerzeniami statystycznymi
 Name:		xlispstat
 Version:	3.52.18
 %define		tar_version	%(echo %{version} | sed 's,\\.,-,g')
@@ -18,6 +19,11 @@ includes extensions for performing advanced statistical computations.
 
 Install the xlispstat package if you need a version of the Lisp
 programming language for X with statistics extensions.
+
+%description -l pl
+Pakiet xlispstat zawiera XLISP-PLUS - implementacjê jêzyka
+programowania Lisp dla X Window System. XLISP-PLUS zawiera tak¿e
+rozszerzenia do prowadzenia zaawansowanych obliczeñ statystycznych.
 
 %prep
 %setup -q -n xlispstat-3-52-9
