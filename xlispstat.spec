@@ -28,7 +28,7 @@ Install the xlispstat package if you need a version of the Lisp
 programming language for X with statistics extensions.
 
 %description -l de
-Eine Implementierung der Lisp-Programmiersprache für X-Windows mit
+Eine Implementierung der Lisp-Programmiersprache für X-Window mit
 Erweiterungen für fortgeschrittene statistische Berechnungen.
 
 %description -l es
@@ -49,7 +49,7 @@ Uma implementação da linguagem de programação Lisp para X Window, com
 extensões para cálculos estatísticos avançados.
 
 %description -l tr
-Lisp programlama dilinin X-Windows altýnda çalýþan ve ileri istatistik
+Lisp programlama dilinin X-Window altýnda çalýþan ve ileri istatistik
 hesaplama desteði bulunan bir gerçeklemesi.
 
 %prep
