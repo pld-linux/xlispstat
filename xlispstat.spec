@@ -6,14 +6,13 @@ Summary(pl):	Implementacja jêzyka Lisp z rozszerzeniami statystycznymi
 Summary(pt_BR):	Xlisp de David Betz com extensões estatísticas
 Summary(tr):	David Betz'in istatistik yetenekleri olana xlisp yorumlayýcýsý
 Name:		xlispstat
-Version:	3.52.18
+Version:	3.52.19
 %define		tar_version	%(echo %{version} | tr . -)
-Release:	6
+Release:	1
 License:	distributable
 Group:		Applications/Engineering
-#Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{tar_version}.tar.gz
-Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/old/%{name}-%{tar_version}.tar.gz
-# Source0-md5:	33498b5f63e16e34bcdf310c5549d7cc
+Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{tar_version}.tar.gz
+# Source0-md5:	2cda23d9553b0f546e4e62558115ce95
 URL:		http://lib.stat.cmu.edu/xlispstat/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
