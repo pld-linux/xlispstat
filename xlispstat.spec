@@ -13,7 +13,7 @@ License:	distributable
 Group:		Applications/Engineering
 #Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{tar_version}.tar.gz
 Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/old/%{name}-%{tar_version}.tar.gz
-# Source0-md5:	aaa
+# Source0-md5:	33498b5f63e16e34bcdf310c5549d7cc
 URL:		http://lib.stat.cmu.edu/xlispstat/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
