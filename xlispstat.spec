@@ -12,8 +12,10 @@ Release:	6
 License:	distributable
 Group:		Applications/Engineering
 Source0:	ftp://ftp.stat.umn.edu/pub/xlispstat/3-52/%{name}-%{tar_version}.tar.gz
-URL:		http://lib.stat.cmu.edu/xlispstat
+URL:		http://lib.stat.cmu.edu/xlispstat/
 BuildRequires:	XFree86-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -53,7 +55,7 @@ hesaplama desteði bulunan bir gerçeklemesi.
 %setup -q -n xlispstat-3-52-18
 
 %build
-aclocal
+%{__aclocal}
 %{__autoconf}
 %configure
 %{__make} UCFLAGS="%{rpmcflags}"
@@ -65,16 +67,14 @@ rm -rf $RPM_BUILD_ROOT
 	prefix=$RPM_BUILD_ROOT%{_prefix} \
 	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
 
-gzip -9nf README RELEASE doc/*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz RELEASE.gz doc/*
-%dir %{_libdir}/xlispstat
+%doc README RELEASE doc/*
 %attr(755,root,root) %{_bindir}/xlispstat
+%dir %{_libdir}/xlispstat
 %attr(755,root,root) %{_libdir}/xlispstat/xlisp
 %{_libdir}/xlispstat/Autoload
 %{_libdir}/xlispstat/Data
