@@ -8,7 +8,7 @@ Summary(tr):	David Betz'in istatistik yetenekleri olana xlisp yorumlayýcýsý
 Name:		xlispstat
 Version:	3.52.18
 %define		tar_version	%(echo %{version} | sed 's,\\.,-,g')
-Release:	5
+Release:	6
 License:	distributable
 Group:		Applications/Engineering
 Group(de):	Applikationen/Ingenieurwesen
@@ -58,7 +58,7 @@ hesaplama desteði bulunan bir gerçeklemesi.
 aclocal
 autoconf
 %configure
-%{__make} UCFLAGS="%{rpmcflags} -mieee-fp"
+%{__make} UCFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
