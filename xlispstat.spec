@@ -2,7 +2,7 @@ Summary:	An implementation of the Lisp language with statistics extensions
 Name:		xlispstat
 Version:	3.52.9
 Release:	2
-License:	Distributable
+License:	distributable
 Group:		Applications/Engineering
 Group(de):	Applikationen/Ingenieurwesen
 Group(pl):	Aplikacje/In¿ynierskie
