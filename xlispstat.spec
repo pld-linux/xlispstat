@@ -4,6 +4,7 @@ Version:	3.52.9
 Release:	2
 Copyright:	Distributable
 Group:		Applications/Engineering
+Group(de):	Applikationen/Ingenieurwesen
 Group(pl):	Aplikacje/In¿ynierskie
 Source0:	ftp://umnstat.stat.umn.edu:/pub/xlispstat/3-52/%{name}-%{version}.tar.gz
 URL:		http://lib.stat.cmu.edu/xlispstat
@@ -22,15 +23,13 @@ programming language for X with statistics extensions.
 
 %build
 %configure
-%{__make} UCFLAGS="$RPM_OPT_FLAGS -mieee-fp"
+%{__make} UCFLAGS="%{rpmcflags} -mieee-fp"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install prefix=$RPM_BUILD_ROOT%{_prefix} \
 	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
-
-strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/xlispstat/xlisp
 
 gzip -9nf README RELEASE doc/*
 
