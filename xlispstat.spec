@@ -1,12 +1,12 @@
-Summary: An implementation of the Lisp language with statistics extensions.
-Name: xlispstat
-Version: 3.52.9
-Release: 2
-Copyright: Distributable
-Group: Applications/Engineering
-Source: ftp://umnstat.stat.umn.edu:/pub/xlispstat/3-52/xlispstat-3-52-9.tar.gz
-URL: http://lib.stat.cmu.edu/xlispstat
-BuildRoot: /var/tmp/xlispstat-root
+Summary:	An implementation of the Lisp language with statistics extensions.
+Name:		xlispstat
+Version:	3.52.9
+Release:	2
+Copyright:	Distributable
+Group:		Applications/Engineering
+Source:		ftp://umnstat.stat.umn.edu:/pub/xlispstat/3-52/%{name}-3-52-9.tar.gz
+URL:		http://lib.stat.cmu.edu/xlispstat
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 The xlispstat package contains XLISP-PLUS, an implementation of the Lisp
@@ -20,19 +20,30 @@ programming language for X with statistics extensions.
 %setup -q -n xlispstat-3-52-9
 
 %build
-./configure --prefix=/usr
-make
+%configure
+make UCFLAGS="$RPM_OPT_FLAGS -mieee-fp"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make prefix=$RPM_BUILD_ROOT/usr install
-strip $RPM_BUILD_ROOT/usr/lib/xlispstat/xlisp
+
+make install prefix=$RPM_BUILD_ROOT%{_prefix} \
+	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
+
+strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/xlispstat/xlisp
+
+gzip -9nf README RELEASE doc/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
-%doc README RELEASE doc
-/usr/bin/xlispstat
-/usr/lib/xlispstat
+%defattr(644,root,root,755)
+%doc README.gz RELEASE.gz doc/*
+%dir %{_libdir}/xlispstat
+%attr(755,root,root) %{_bindir}/xlispstat
+%attr(755,root,root) %{_libdir}/xlispstat/xlisp
+%{_libdir}/xlispstat/Autoload
+%{_libdir}/xlispstat/Data
+%{_libdir}/xlispstat/Examples
+%{_libdir}/xlispstat/xlisp.hlp
+%{_libdir}/xlispstat/xlisp.wks
