@@ -22,12 +22,12 @@ programming language for X with statistics extensions.
 
 %build
 %configure
-make UCFLAGS="$RPM_OPT_FLAGS -mieee-fp"
+%{__make} UCFLAGS="$RPM_OPT_FLAGS -mieee-fp"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install prefix=$RPM_BUILD_ROOT%{_prefix} \
+%{__make} install prefix=$RPM_BUILD_ROOT%{_prefix} \
 	exec_prefix=$RPM_BUILD_ROOT%{_prefix}
 
 strip --strip-unneeded $RPM_BUILD_ROOT%{_libdir}/xlispstat/xlisp
