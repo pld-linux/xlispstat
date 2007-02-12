@@ -1,10 +1,10 @@
 Summary:	An implementation of the Lisp language with statistics extensions
-Summary(de.UTF-8):   xlisp von David Betz mit Statistik-Erweiterungen
-Summary(es.UTF-8):   Xlisp de David Betz con extensiones estadísticas
-Summary(fr.UTF-8):   xlisp de David Betz avec des extensions statistiques
-Summary(pl.UTF-8):   Implementacja języka Lisp z rozszerzeniami statystycznymi
-Summary(pt_BR.UTF-8):   Xlisp de David Betz com extensões estatísticas
-Summary(tr.UTF-8):   David Betz'in istatistik yetenekleri olana xlisp yorumlayıcısı
+Summary(de.UTF-8):	xlisp von David Betz mit Statistik-Erweiterungen
+Summary(es.UTF-8):	Xlisp de David Betz con extensiones estadísticas
+Summary(fr.UTF-8):	xlisp de David Betz avec des extensions statistiques
+Summary(pl.UTF-8):	Implementacja języka Lisp z rozszerzeniami statystycznymi
+Summary(pt_BR.UTF-8):	Xlisp de David Betz com extensões estatísticas
+Summary(tr.UTF-8):	David Betz'in istatistik yetenekleri olana xlisp yorumlayıcısı
 Name:		xlispstat
 Version:	3.52.19
 %define		tar_version	%(echo %{version} | tr . -)
