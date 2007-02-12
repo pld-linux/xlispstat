@@ -1,10 +1,10 @@
 Summary:	An implementation of the Lisp language with statistics extensions
-Summary(de):	xlisp von David Betz mit Statistik-Erweiterungen
-Summary(es):	Xlisp de David Betz con extensiones estadísticas
-Summary(fr):	xlisp de David Betz avec des extensions statistiques
-Summary(pl):	Implementacja jêzyka Lisp z rozszerzeniami statystycznymi
-Summary(pt_BR):	Xlisp de David Betz com extensões estatísticas
-Summary(tr):	David Betz'in istatistik yetenekleri olana xlisp yorumlayýcýsý
+Summary(de.UTF-8):   xlisp von David Betz mit Statistik-Erweiterungen
+Summary(es.UTF-8):   Xlisp de David Betz con extensiones estadÃ­sticas
+Summary(fr.UTF-8):   xlisp de David Betz avec des extensions statistiques
+Summary(pl.UTF-8):   Implementacja jÄ™zyka Lisp z rozszerzeniami statystycznymi
+Summary(pt_BR.UTF-8):   Xlisp de David Betz com extensÃµes estatÃ­sticas
+Summary(tr.UTF-8):   David Betz'in istatistik yetenekleri olana xlisp yorumlayÄ±cÄ±sÄ±
 Name:		xlispstat
 Version:	3.52.19
 %define		tar_version	%(echo %{version} | tr . -)
@@ -27,30 +27,30 @@ includes extensions for performing advanced statistical computations.
 Install the xlispstat package if you need a version of the Lisp
 programming language for X with statistics extensions.
 
-%description -l de
-Eine Implementierung der Lisp-Programmiersprache für X-Window mit
-Erweiterungen für fortgeschrittene statistische Berechnungen.
+%description -l de.UTF-8
+Eine Implementierung der Lisp-Programmiersprache fÃ¼r X-Window mit
+Erweiterungen fÃ¼r fortgeschrittene statistische Berechnungen.
 
-%description -l es
-Una implementación al lenguaje de programación Lisp para X Window, con
-extensiones para cálculos estadísticos avanzados.
+%description -l es.UTF-8
+Una implementaciÃ³n al lenguaje de programaciÃ³n Lisp para X Window, con
+extensiones para cÃ¡lculos estadÃ­sticos avanzados.
 
-%description -l fr
+%description -l fr.UTF-8
 Implantation du langage Lisp pour X Window, avec des extensions pour
-les calculs statistiques avancés.
+les calculs statistiques avancÃ©s.
 
-%description -l pl
-Pakiet xlispstat zawiera XLISP-PLUS - implementacjê jêzyka
-programowania Lisp dla X Window System. XLISP-PLUS zawiera tak¿e
-rozszerzenia do prowadzenia zaawansowanych obliczeñ statystycznych.
+%description -l pl.UTF-8
+Pakiet xlispstat zawiera XLISP-PLUS - implementacjÄ™ jÄ™zyka
+programowania Lisp dla X Window System. XLISP-PLUS zawiera takÅ¼e
+rozszerzenia do prowadzenia zaawansowanych obliczeÅ„ statystycznych.
 
-%description -l pt_BR
-Uma implementação da linguagem de programação Lisp para X Window, com
-extensões para cálculos estatísticos avançados.
+%description -l pt_BR.UTF-8
+Uma implementaÃ§Ã£o da linguagem de programaÃ§Ã£o Lisp para X Window, com
+extensÃµes para cÃ¡lculos estatÃ­sticos avanÃ§ados.
 
-%description -l tr
-Lisp programlama dilinin X-Window altýnda çalýþan ve ileri istatistik
-hesaplama desteði bulunan bir gerçeklemesi.
+%description -l tr.UTF-8
+Lisp programlama dilinin X-Window altÄ±nda Ã§alÄ±ÅŸan ve ileri istatistik
+hesaplama desteÄŸi bulunan bir gerÃ§eklemesi.
 
 %prep
 %setup -q -n xlispstat-3-52-18
